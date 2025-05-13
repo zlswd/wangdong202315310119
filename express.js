@@ -8,7 +8,7 @@ const fs = require('fs');
 const socket = dgram.creatSocket('udp4');
 
 //绑定地址和端口号
-socket.bind(6666,'127.0.0.1');
+socket.bind(8000,'127.0.0.1');
 
 //读取客户端发来的数据
 socket.on('message',(data,rinfo) =>{
